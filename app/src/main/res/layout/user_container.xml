@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_2x"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTopHead"
+        style="@style/blog_text_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imProfilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_3x"
+        android:src="@drawable/profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backarrow" />
+
+    <TextView
+        android:id="@+id/userName"
+        style="@style/bold_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_1x"
+        android:layout_marginTop="@dimen/spacing_3x"
+        android:text="@string/username"
+        app:layout_constraintLeft_toRightOf="@+id/imProfilePic"
+        app:layout_constraintTop_toBottomOf="@+id/backarrow" />
+
+    <TextView
+        android:id="@+id/tvHight"
+        style="@style/light_text_med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_1x"
+        android:text="@string/hight_u"
+        app:layout_constraintLeft_toRightOf="@+id/imProfilePic"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <TextView
+        android:id="@+id/tvWeight"
+        style="@style/light_text_med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_1x"
+        android:text="@string/weight_u"
+        app:layout_constraintLeft_toRightOf="@+id/tvHight"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <ImageView
+        android:id="@+id/imSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_0.5x"
+        android:layout_marginTop="@dimen/spacing_3x"
+        android:src="@drawable/success"
+        app:layout_constraintLeft_toRightOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/backarrow" />
+
+    <TextView
+        android:id="@+id/tvtwo"
+        style="@style/light_text_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_0.25x"
+        android:layout_marginTop="@dimen/spacing_3x"
+        android:text="@string/text_2"
+        app:layout_constraintLeft_toRightOf="@+id/imSuccess"
+        app:layout_constraintTop_toBottomOf="@+id/backarrow" />
+
+    <com.google.android.material.chip.Chip
+        style="@style/light_text_med_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_2x"
+        android:text="@string/text_3"
+        app:chipBackgroundColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imSuccess"
+        app:layout_constraintTop_toBottomOf="@+id/backarrow" />
+
+    <TextView
+        android:id="@+id/tvHead"
+        style="@style/bold_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_2x"
+        android:text="@string/text_4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imProfilePic" />
+
+
+    <TextView
+        android:id="@+id/tvDescp"
+        style="@style/light_med_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_2x"
+        android:text="@string/text_5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHead" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipCppOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/chipOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipCppTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_0.25x"
+        android:text="@string/chipTwo"
+        app:layout_constraintStart_toEndOf="@+id/chipCppOne"
+        app:layout_constraintTop_toBottomOf="@id/tvDescp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipCppThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_0.25x"
+        android:text="@string/chipThree"
+        app:layout_constraintStart_toEndOf="@+id/chipCppTwo"
+        app:layout_constraintTop_toBottomOf="@id/tvDescp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipCppFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_0.25x"
+        android:text="@string/chipFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chipCppThree"
+        app:layout_constraintTop_toBottomOf="@id/tvDescp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipCppFiv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/chipFive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chipCppOne" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipCppSix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_0.3x"
+        android:text="@string/chipSix"
+        app:layout_constraintStart_toEndOf="@+id/chipCppFiv"
+        app:layout_constraintTop_toBottomOf="@id/chipCppOne" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

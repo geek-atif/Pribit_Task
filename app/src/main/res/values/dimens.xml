@@ -1,0 +1,31 @@
+<resources>
+    <dimen name="spacing_0.1x">1dp</dimen>
+    <dimen name="spacing_0.25x">2dp</dimen>
+    <dimen name="spacing_0.3x">3dp</dimen>
+    <dimen name="spacing_0.5x">4dp</dimen>
+    <dimen name="spacing_0.75x">6dp</dimen>
+    <dimen name="spacing_1x">8dp</dimen>
+    <dimen name="spacing_1.5x">12dp</dimen>
+    <dimen name="spacing_2x">16dp</dimen>
+    <dimen name="spacing_2.5x">20dp</dimen>
+    <dimen name="spacing_3x">24dp</dimen>
+    <dimen name="spacing_4x">32dp</dimen>
+    <dimen name="spacing_4.5x">36dp</dimen>
+    <dimen name="spacing_5x">40dp</dimen>
+    <dimen name="spacing_6x">48dp</dimen>
+    <dimen name="spacing_7x">56dp</dimen>
+    <dimen name="spacing_8x">64dp</dimen>
+    <dimen name="spacing_9x">72dp</dimen>
+    <dimen name="spacing_10x">80dp</dimen>
+    <dimen name="spacing_11x">88dp</dimen>
+    <dimen name="spacing_12x">96dp</dimen>
+    <dimen name="spacing_13x">104dp</dimen>
+
+    <!-- text size -->
+    <dimen name="size_10">10sp</dimen>
+    <dimen name="size_12">12sp</dimen>
+    <dimen name="size_14">14sp</dimen>
+    <dimen name="size_18">14sp</dimen>
+
+</resources>
+

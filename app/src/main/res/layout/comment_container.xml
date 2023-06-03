@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imProfilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userName"
+        style="@style/bold_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_1x"
+        android:text="@string/username"
+        app:layout_constraintLeft_toRightOf="@+id/imProfilePic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_0.5x"
+        android:src="@drawable/success"
+        app:layout_constraintLeft_toRightOf="@+id/userName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvtwo"
+        style="@style/light_text_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_0.25x"
+        android:text="@string/text_2"
+        app:layout_constraintLeft_toRightOf="@+id/imSuccess"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_1.5x"
+        android:src="@drawable/expand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/firstComment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/imProfilePic">
+
+        <TextView
+            android:id="@+id/tvDescp"
+            style="@style/light_med_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_2x"
+            android:text="@string/commentOne"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imHeartComt"
+            android:layout_width="@dimen/spacing_2.5x"
+            android:layout_height="@dimen/spacing_2.5x"
+            android:layout_marginTop="@dimen/spacing_1x"
+            android:src="@drawable/heart"
+            app:layout_constraintStart_toStartOf="@+id/tvDescp"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescp" />
+
+        <TextView
+            android:id="@+id/tvLikeNo"
+            style="@style/light_text_med_gry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_0.75x"
+            android:layout_marginTop="@dimen/spacing_0.75x"
+            android:text="@string/five"
+            app:layout_constraintStart_toEndOf="@+id/imHeartComt"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescp" />
+
+
+        <ImageView
+            android:id="@+id/imComment"
+            android:layout_width="@dimen/spacing_2.5x"
+            android:layout_height="@dimen/spacing_2.5x"
+            android:layout_marginStart="@dimen/spacing_1.5x"
+            android:layout_marginTop="@dimen/spacing_1x"
+            android:src="@drawable/comment"
+            app:layout_constraintStart_toEndOf="@+id/tvLikeNo"
+            app:layout_constraintTop_toBottomOf="@id/tvDescp" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            style="@style/light_text_med_gry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_0.75x"
+            android:layout_marginTop="@dimen/spacing_0.75x"
+            android:text="@string/five"
+            app:layout_constraintStart_toEndOf="@+id/imComment"
+            app:layout_constraintTop_toBottomOf="@id/tvDescp" />
+
+        <ImageView
+            android:id="@+id/imProfilePicTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_2.5x"
+            android:src="@drawable/user_two"
+            app:layout_constraintStart_toStartOf="@+id/imHeartComt"
+            app:layout_constraintTop_toBottomOf="@id/imHeartComt" />
+
+        <TextView
+            android:id="@+id/userNameTwo"
+            style="@style/bold_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_1x"
+            android:text="@string/usernametwo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCommentTwo"
+            app:layout_constraintLeft_toRightOf="@+id/imProfilePicTwo"
+            app:layout_constraintTop_toBottomOf="@+id/imHeartComt" />
+
+        <TextView
+            android:id="@+id/tvthree"
+            style="@style/light_text_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_0.25x"
+            android:text="@string/text_6"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCommentTwo"
+
+            app:layout_constraintLeft_toRightOf="@+id/userNameTwo"
+            app:layout_constraintTop_toBottomOf="@+id/imHeartComt" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_1.5x"
+            android:src="@drawable/expand"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imHeartComt" />
+
+
+        <TextView
+            android:id="@+id/tvCommentTwo"
+            style="@style/light_med_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/commentTwo"
+            app:layout_constraintLeft_toRightOf="@+id/imProfilePicTwo"
+            app:layout_constraintTop_toBottomOf="@+id/imProfilePicTwo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
